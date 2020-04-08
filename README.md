@@ -1,9 +1,12 @@
-# AreaMap 古橋研究室版
+# AreaMap
 日本の都道府県を区分毎に色分けして表示するカラム地図（TabularMaps）  
 https://tabularmaps.github.io/areamap/  
 
 世界カラム地図  
-https://tabularmaps.github.io/areamap/world.html  
+https://tabularmaps.github.io/areamap/world.html 
+
+世界人口カラム地図  
+https://tabularmaps.github.io/areamap/world-pop.html  
 
 福井カラム地図  
 https://tabularmaps.github.io/areamap/fukui.html  
@@ -20,8 +23,8 @@ https://tabularmaps.github.io/areamap/ishikawa.html
 富山カラム地図β  
 https://tabularmaps.github.io/areamap/toyama.html  
 
-熊本カラム地図  
-https://furuhashilab.github.io/areamap/kumamoto.html
+# AreaMap 古橋研究室版
+北海道カラム地図
 
 青森カラム地図  
 https://furuhashilab.github.io/areamap/aomori.html  
@@ -44,6 +47,9 @@ https://furuhashilab.github.io/areamap/fukushima.html
 茨城カラム地図  
 https://furuhashilab.github.io/areamap/ibaraki.html  
 
+栃木カラム地図
+https://furuhashilab.github.io/areamap/tochigi.html
+
 群馬カラム地図  
 https://furuhashilab.github.io/areamap/gunma.html　　
 
@@ -59,6 +65,23 @@ https://furuhashilab.github.io/areamap/tokyo.html
 神奈川カラム地図  
 https://furuhashilab.github.io/areamap/kanagawa.html  
 
-世界人口カラム地図  
-https://tabularmaps.github.io/areamap/world-pop.html  
+新潟カラム地図
+https://furuhashilab.github.io/areamap/nigata.html  
 
+富山カラム地図（重複）
+https://furuhashilab.github.io/areamap/toyama.html
+
+鳥取カラム地図
+https://furuhashilab.github.io/areamap/tottori.html
+
+島根カラム地図
+https://furuhashilab.github.io/areamap/shimane.html
+
+岡山カラム地図
+https://furuhashilab.github.io/areamap/okayama.html
+
+山口カラム地図
+https://furuhashilab.github.io/areamap/yamaguchi.html
+
+熊本カラム地図  
+https://furuhashilab.github.io/areamap/kumamoto.html
