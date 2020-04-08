@@ -1,0 +1,148 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>岡山県カラム地図 - Okayama TabularMaps</title>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<link rel="apple-touch-icon" href="ishikawa.png"/>
+<meta property="og:image" content="ishikawa.png">
+<meta name="format-detection" content="telephone=no"/>
+<script>'use strict'
+
+//
+const TABULARMAP_SRC =
+`
+新庄村	真庭市	鏡野町	津山市	奈義町	西栗倉村
+新見市	高梁市	美咲町	久米南町	勝央町	美作市
+井原市	総社市	吉備中央町	赤磐市	和気町	備前市
+笠岡市	矢掛町	早島町	岡山市	瀬戸内市
+里庄町	浅口市	倉敷市	玉野市		`
+
+
+window.onload = function() {
+	tmap.innerHTML = makeTabularMap(TABULARMAP_SRC)
+	tmtitle.textContent = "岡山県"
+
+	linkCells(tmap)
+}
+
+const linkCells = function(divid) {
+	for (let tr of divid.childNodes[0].childNodes[0].childNodes) {
+		for (let td of tr.childNodes) {
+			const name = td.textContent
+			if (name.length > 0) {
+				const url = "https://ja.wikipedia.org/wiki/" + encodeURIComponent(name)
+				td.innerHTML = "<a href=" + url + ">" + name + "</a>"
+			}
+		}
+	}
+}
+
+const makeTabularMap = function(src) {
+	let items = []
+	const ssrc = src.substring(1).split('\n')
+	for (let ss of ssrc) {
+		items.push(ss.split('\t'))
+	}
+	let s = []
+	let maxcol = 0
+	let nmaxcol = -1
+	s.push('<table class=tabularmaps>')
+	for (let row of items) {
+		s.push('<tr>')
+		for (let item of row) {
+			if (item.length == 0) {
+				let s2 = s[s.length - 1]
+				if (s2.startsWith("<td class=tmnull colspan=")) {
+					s.pop()
+					const ncol = parseInt(s2.substring("<td class=tmnull colspan=".length)) + 1
+					s.push('<td class=tmnull colspan=' + ncol + '</td>')
+					if (maxcol < ncol) {
+						maxcol = ncol
+						nmaxcol = s.length - 1
+					}
+				} else {
+					s.push('<td class=tmnull colspan=1></td>')
+					if (maxcol < 1) {
+						maxcol = 1
+						nmaxcol = s.length - 1
+					}
+				}
+			} else {
+				s.push('<td id="' + item + '">' + item + '</td>')
+			}
+		}
+		s.push('</tr>')
+	}
+	s[nmaxcol] = s[nmaxcol].replace('<td class=tmnull colspan=', '<td class=tmnull id=tmtitle colspan=')
+	s.push('</table>')
+	return s.join('')
+}
+</script>
+<style>
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+h1 {
+	font-size: 3vw;
+	margin-top: 2vw;
+}
+/* tabularmaps */
+.tabularmaps {
+	border-spacing: 1vw;
+	border-collapse: separate;
+	display: inline-block;
+	width: 90vw;
+	height: 67vw;
+	position: relative;
+}
+.tabularmaps td {
+	width: calc(90vw / 4);
+	height: calc(60vw / 5);
+	font-size: 3vw;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: .5vw;
+	border: 1px solid #333;
+	margin: 20px;
+}
+.tabularmaps a {
+	text-decoration: none;
+	color: black;
+}
+.tabularmaps a:visited {
+	text-decoration: none;
+	color: #055;
+}
+.tmnull {
+	background-color: #888;
+}
+#tmtitle {
+	color: white;
+}
+/* credit */
+.credit {
+	margin: 20px;
+	text-align: center;
+	font-size: 80%;
+}
+.credit a {
+	color: gray !important;
+}
+</style>
+</head>
+<body>
+
+<h1>岡山県カラム地図</h1>
+
+<div id="tmap"></div>
+
+<div class="credit">
+APP: CC BY <a href=http://fukuno.jig.jp/2462>福野泰介 - まるでパズルなカラム地図</a><br>
+Base APP: CC BY <a href=https://fukuno.jig.jp/2433>福野泰介 - 日本のオープンデータ都市率ダッシュボード</a><br>
+LAYOUT: CC0 <a href=https://hackmd.io/7m2A33zJSWq6DA9lYbvtpQ>カラム地図</a> (<a href=https://github.com/tabularmaps/hq>カラム地図 / TabularMaps on Github</a>)<br>
+</div>
+
+</body>
+</html>
