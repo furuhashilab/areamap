@@ -75,6 +75,7 @@ https://furuhashilab.github.io/areamap/nigata.html
 富山カラム地図（実装済み、重複）
 
 https://furuhashilab.github.io/areamap/toyama.html
+
 [実装済み](https://tabularmaps.github.io/areamap/toyama.html)
 
 鳥取カラム地図
@@ -90,6 +91,7 @@ https://furuhashilab.github.io/areamap/shimane.html
 https://furuhashilab.github.io/areamap/okayama.html
 
 広島カラム地図
+
 [実装済み](https://tabularmaps.github.io/areamap/hiroshima.html)
 
 山口カラム地図
