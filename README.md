@@ -75,24 +75,31 @@ https://furuhashilab.github.io/areamap/nigata.html
 https://furuhashilab.github.io/areamap/toyama.html
 
 三重カラム地図
+
 https://furuhashilab.github.io/areamap/mie.html
 
 滋賀カラム地図
+
 https://furuhashilab.github.io/areamap/shiga.html
 
 京都カラム地図
+
 https://furuhashilab.github.io/areamap/kyoto.html
 
 大阪カラム地図
+
 https://furuhashilab.github.io/areamap/osaka.html
 
 兵庫カラム地図
+
 https://furuhashilab.github.io/areamap/hyogo.html
 
 奈良カラム地図
+
 https://furuhashilab.github.io/areamap/nara.html
 
 和歌山カラム地図
+
 https://furuhashilab.github.io/areamap/wakayama.html
 
 鳥取カラム地図
