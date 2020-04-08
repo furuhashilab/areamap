@@ -1,4 +1,4 @@
-# AreaMap 実装済み
+# AreaMap
 日本の都道府県を区分毎に色分けして表示するカラム地図（TabularMaps）  
 https://tabularmaps.github.io/areamap/  
 
@@ -22,8 +22,6 @@ https://tabularmaps.github.io/areamap/ishikawa.html
 
 富山カラム地図β  
 https://tabularmaps.github.io/areamap/toyama.html  
-
-***
 
 # AreaMap 古橋研究室版
 北海道カラム地図
@@ -72,11 +70,30 @@ https://furuhashilab.github.io/areamap/kanagawa.html
 
 https://furuhashilab.github.io/areamap/nigata.html  
 
-富山カラム地図（実装済み、重複）
+富山カラム地図（重複）
 
 https://furuhashilab.github.io/areamap/toyama.html
 
-[実装済み](https://tabularmaps.github.io/areamap/toyama.html)
+三重カラム地図
+https://furuhashilab.github.io/areamap/mie.html
+
+滋賀カラム地図
+https://furuhashilab.github.io/areamap/shiga.html
+
+京都カラム地図
+https://furuhashilab.github.io/areamap/kyoto.html
+
+大阪カラム地図
+https://furuhashilab.github.io/areamap/osaka.html
+
+兵庫カラム地図
+https://furuhashilab.github.io/areamap/hyogo.html
+
+奈良カラム地図
+https://furuhashilab.github.io/areamap/nara.html
+
+和歌山カラム地図
+https://furuhashilab.github.io/areamap/wakayama.html
 
 鳥取カラム地図
 
@@ -89,10 +106,6 @@ https://furuhashilab.github.io/areamap/shimane.html
 岡山カラム地図
 
 https://furuhashilab.github.io/areamap/okayama.html
-
-広島カラム地図
-
-[実装済み](https://tabularmaps.github.io/areamap/hiroshima.html)
 
 山口カラム地図
 
