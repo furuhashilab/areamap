@@ -1,0 +1,185 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@ShogoHirasawa
+furuhashilab
+/
+areamap
+forked from tabularmaps/areamap
+0
+0
+2
+ Code Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+areamap/kumamoto.html
+@ShogoHirasawa ShogoHirasawa Update kumamoto.html
+52f1cc2 7 minutes ago
+151 lines (142 sloc)  3.65 KB
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>熊本カラム地図 - Kumamoto TabularMaps</title>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<link rel="apple-touch-icon" href="ishikawa.png"/>
+<meta property="og:image" content="ishikawa.png">
+<meta name="format-detection" content="telephone=no"/>
+<script>'use strict'
+
+// 19市町 4x5
+const TABULARMAP_SRC = `
+南関町	山鹿市	菊池市	小国町	産山村
+荒尾市	和水町	大津町	南小国町	阿蘇市
+長洲町	玉東町	菊陽町	南阿蘇村	高森町
+玉名市	合志市	西原村	御船町	山都町
+宇土市	熊本市	益城町	甲佐町	水上村
+宇城市	八代市	嘉島町	美里町	湯前町
+氷川町	芦北町	山江村	五木村	多良木町
+苓北町	上天草市	球磨村	相良村	あさぎり町
+天草市	津奈木町	水俣市	人吉市	錦町
+`
+
+window.onload = function() {
+	tmap.innerHTML = makeTabularMap(TABULARMAP_SRC)
+	tmtitle.textContent = "熊本県"
+
+	linkCells(tmap)
+}
+
+const linkCells = function(divid) {
+	for (let tr of divid.childNodes[0].childNodes[0].childNodes) {
+		for (let td of tr.childNodes) {
+			const name = td.textContent
+			if (name.length > 0) {
+				const url = "https://ja.wikipedia.org/wiki/" + encodeURIComponent(name)
+				td.innerHTML = "<a href=" + url + ">" + name + "</a>"
+			}
+		}
+	}
+}
+
+const makeTabularMap = function(src) {
+	let items = []
+	const ssrc = src.substring(1).split('\n')
+	for (let ss of ssrc) {
+		items.push(ss.split('\t'))
+	}
+	let s = []
+	let maxcol = 0
+	let nmaxcol = -1
+	s.push('<table class=tabularmaps>')
+	for (let row of items) {
+		s.push('<tr>')
+		for (let item of row) {
+			if (item.length == 0) {
+				let s2 = s[s.length - 1]
+				if (s2.startsWith("<td class=tmnull colspan=")) {
+					s.pop()
+					const ncol = parseInt(s2.substring("<td class=tmnull colspan=".length)) + 1
+					s.push('<td class=tmnull colspan=' + ncol + '</td>')
+					if (maxcol < ncol) {
+						maxcol = ncol
+						nmaxcol = s.length - 1
+					}
+				} else {
+					s.push('<td class=tmnull colspan=1></td>')
+					if (maxcol < 1) {
+						maxcol = 1
+						nmaxcol = s.length - 1
+					}
+				}
+			} else {
+				s.push('<td id="' + item + '">' + item + '</td>')
+			}
+		}
+		s.push('</tr>')
+	}
+	s[nmaxcol] = s[nmaxcol].replace('<td class=tmnull colspan=', '<td class=tmnull id=tmtitle colspan=')
+	s.push('</table>')
+	return s.join('')
+}
+</script>
+<style>
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+h1 {
+	font-size: 3vw;
+	margin-top: 2vw;
+}
+/* tabularmaps */
+.tabularmaps {
+	border-spacing: 1vw;
+	border-collapse: separate;
+	display: inline-block;
+	width: 90vw;
+	height: 67vw;
+	position: relative;
+}
+.tabularmaps td {
+	width: calc(90vw / 4);
+	height: calc(60vw / 5);
+	font-size: 3vw;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: .5vw;
+	border: 1px solid #333;
+	margin: 20px;
+}
+.tabularmaps a {
+	text-decoration: none;
+	color: black;
+}
+.tabularmaps a:visited {
+	text-decoration: none;
+	color: #055;
+}
+.tmnull {
+	background-color: #888;
+}
+#tmtitle {
+	color: white;
+}
+/* credit */
+.credit {
+	margin: 20px;
+	text-align: center;
+	font-size: 80%;
+}
+.credit a {
+	color: gray !important;
+}
+</style>
+</head>
+<body>
+
+<h1>熊本カラム地図</h1>
+
+<div id="tmap"></div>
+
+<div class="credit">
+APP: CC BY <a href=http://fukuno.jig.jp/2462>福野泰介 - まるでパズルなカラム地図</a><br>
+Base APP: CC BY <a href=https://fukuno.jig.jp/2433>福野泰介 - 日本のオープンデータ都市率ダッシュボード</a><br>
+LAYOUT: CC0 <a href=https://hackmd.io/7m2A33zJSWq6DA9lYbvtpQ>カラム地図</a> (<a href=https://github.com/tabularmaps/hq>カラム地図 / TabularMaps on Github</a>)<br>
+</div>
+
+</body>
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
