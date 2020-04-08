@@ -143,3 +143,15 @@ https://furuhashilab.github.io/areamap/fukuoka.html
 
 熊本カラム地図  
 https://furuhashilab.github.io/areamap/kumamoto.html
+
+大分カラム地図
+
+
+宮崎カラム地図
+
+
+鹿児島カラム地図
+
+
+沖縄カラム地図
+
