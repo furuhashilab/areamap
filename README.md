@@ -48,6 +48,7 @@ https://furuhashilab.github.io/areamap/fukushima.html
 https://furuhashilab.github.io/areamap/ibaraki.html  
 
 栃木カラム地図
+
 https://furuhashilab.github.io/areamap/tochigi.html
 
 群馬カラム地図  
@@ -66,21 +67,27 @@ https://furuhashilab.github.io/areamap/tokyo.html
 https://furuhashilab.github.io/areamap/kanagawa.html  
 
 新潟カラム地図
+
 https://furuhashilab.github.io/areamap/nigata.html  
 
 富山カラム地図（重複）
+
 https://furuhashilab.github.io/areamap/toyama.html
 
 鳥取カラム地図
+
 https://furuhashilab.github.io/areamap/tottori.html
 
 島根カラム地図
+
 https://furuhashilab.github.io/areamap/shimane.html
 
 岡山カラム地図
+
 https://furuhashilab.github.io/areamap/okayama.html
 
 山口カラム地図
+
 https://furuhashilab.github.io/areamap/yamaguchi.html
 
 熊本カラム地図  
