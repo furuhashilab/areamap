@@ -91,4 +91,9 @@ https://furuhashilab.github.io/areamap/okayama.html
 https://furuhashilab.github.io/areamap/yamaguchi.html
 
 熊本カラム地図  
-https://furuhashilab.github.io/areamap/kumamoto.html
+https://furuhashilab.github.io/areamap/kumamoto.html  
+
+北海道カラム地図  
+https://furuhashilab.github.io/areamap/hokkaido.html  
+
+
