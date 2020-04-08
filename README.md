@@ -29,7 +29,7 @@ https://tabularmaps.github.io/areamap/aomori.html
 岩手カラム地図  
 https://tabularmaps.github.io/areamap/iwate.html  
 
-宮城カラム地図
+宮城カラム地図  
 https://tabularmaps.github.io/areamap/miyagi.html  
 
 秋田カラム地図  
