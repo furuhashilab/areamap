@@ -148,7 +148,7 @@ https://furuhashilab.github.io/areamap/kumamoto.html
 
 
 大分カラム地図
-
+https://github.com/MIKICIAO/areamap/blob/master/oita.html
 
 宮崎カラム地図
 
