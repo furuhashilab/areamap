@@ -131,5 +131,14 @@ https://furuhashilab.github.io/areamap/okayama.html
 
 https://furuhashilab.github.io/areamap/yamaguchi.html
 
+福岡カラム地図
+
+
+佐賀カラム地図
+
+
+長崎カラム地図
+
+
 熊本カラム地図  
 https://furuhashilab.github.io/areamap/kumamoto.html
