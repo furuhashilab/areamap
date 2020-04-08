@@ -1,35 +1,24 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>富山カラム地図 - Toyama TabularMaps</title>
+<title>富山県カラム地図 - Toyama TabularMaps</title>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-<link rel="apple-touch-icon" href="toyama.png"/>
-<meta property="og:image" content="toyama.png">
+<link rel="apple-touch-icon" href="ishikawa.png"/>
+<meta property="og:image" content="ishikawa.png">
 <meta name="format-detection" content="telephone=no"/>
 <script>'use strict'
 
-// 15市町村 4x4
-/* // v1.0
-const TABULARMAP_SRC = `
-氷見市	高岡市	入善町	朝日町
-射水市	滑川市	魚津市	黒部市
-矢部市	砺波市	富山市	舟橋村
-南砺市	立山市	上市町	`
-*/
-// v1.1
-const TABULARMAP_SRC = `
-氷見市	射水市	入善町	朝日町
-高岡市	砺波市	滑川市	黒部市
-矢部市	舟橋村	上市町	魚津市
-南砺市	富山市	立山市	`
-
-// thanks! @macoto_1655 https://twitter.com/macoto_1655/status/1121239508169547782
-
+//
+const TABULARMAP_SRC =
+`
+氷見市	射水市	魚津市	朝日町
+高岡市	富山市	滑川市	入善町
+矢部市	舟橋村	上市町	黒部市
+南砺市	砺波市	立山市	`
 
 window.onload = function() {
 	tmap.innerHTML = makeTabularMap(TABULARMAP_SRC)
-
 	tmtitle.textContent = "富山県"
 
 	linkCells(tmap)
@@ -108,7 +97,7 @@ h1 {
 }
 .tabularmaps td {
 	width: calc(90vw / 4);
-	height: calc(60vw / 4);
+	height: calc(60vw / 5);
 	font-size: 3vw;
 	vertical-align: middle;
 	text-align: center;
@@ -150,7 +139,6 @@ h1 {
 <div class="credit">
 APP: CC BY <a href=http://fukuno.jig.jp/2462>福野泰介 - まるでパズルなカラム地図</a><br>
 Base APP: CC BY <a href=https://fukuno.jig.jp/2433>福野泰介 - 日本のオープンデータ都市率ダッシュボード</a><br>
-DATA: <a href=https://github.com/tabularmaps/77>地方測量部担当地域</a>, <a href=https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%9C%B0%E5%9F%9F>八地方区分 - Wikipedia</a><br>
 LAYOUT: CC0 <a href=https://hackmd.io/7m2A33zJSWq6DA9lYbvtpQ>カラム地図</a> (<a href=https://github.com/tabularmaps/hq>カラム地図 / TabularMaps on Github</a>)<br>
 </div>
 
