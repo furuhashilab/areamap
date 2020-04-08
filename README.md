@@ -74,6 +74,19 @@ https://furuhashilab.github.io/areamap/nigata.html
 
 https://furuhashilab.github.io/areamap/toyama.html
 
+山梨カラム地図
+
+https://furuhashilab.github.io/areamap/yamanashi.html
+
+長野カラム地図
+
+
+静岡カラム地図
+
+
+愛知カラム地図
+
+
 三重カラム地図
 
 https://furuhashilab.github.io/areamap/mie.html
