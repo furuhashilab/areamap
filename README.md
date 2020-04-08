@@ -20,6 +20,9 @@ https://tabularmaps.github.io/areamap/ishikawa.html
 富山カラム地図β  
 https://tabularmaps.github.io/areamap/toyama.html  
 
+熊本カラム地図
+https://tabularmaps.github.io/areamap/.html  
+
 世界人口カラム地図  
 https://tabularmaps.github.io/areamap/world-pop.html  
 
