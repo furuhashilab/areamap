@@ -26,6 +26,8 @@ https://tabularmaps.github.io/areamap/toyama.html
 # AreaMap 古橋研究室版
 北海道カラム地図
 
+https://furuhashilab.github.io/areamap/hokkaido.html  
+
 青森カラム地図  
 https://furuhashilab.github.io/areamap/aomori.html  
 
