@@ -133,6 +133,7 @@ https://furuhashilab.github.io/areamap/yamaguchi.html
 
 福岡カラム地図
 
+https://furuhashilab.github.io/areamap/fukuoka.html
 
 佐賀カラム地図
 
