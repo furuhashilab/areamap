@@ -160,6 +160,8 @@ https://furuhashilab.github.io/areamap/oita.html
 
 宮崎カラム地図
 
+https://furuhashilab.github.io/areamap/miyazaki.html
+
 
 鹿児島カラム地図
 
