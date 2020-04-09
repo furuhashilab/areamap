@@ -146,7 +146,7 @@ https://furuhashilab.github.io/areamap/saga.html
 
 
 長崎カラム地図
-
+https://furuhashilab.github.io/areamap/nagasaki.html
 
 熊本カラム地図
 
