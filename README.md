@@ -154,7 +154,7 @@ https://furuhashilab.github.io/areamap/kumamoto.html
 
 
 大分カラム地図
-
+https://furuhashilab.github.io/areamap/.html
 
 宮崎カラム地図
 
