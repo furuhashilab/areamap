@@ -169,4 +169,4 @@ https://furuhashilab.github.io/areamap/kagoshima.html
 
 沖縄カラム地図
 
-https://furuhashilab.github.io/areamap/okinawa.html
+
