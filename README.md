@@ -82,12 +82,15 @@ https://furuhashilab.github.io/areamap/yamanashi.html
 
 長野カラム地図
 
+https://furuhashilab.github.io/areamap/nagano.html
 
 静岡カラム地図
+https://furuhashilab.github.io/areamap/sizuoka.html
 
 
 愛知カラム地図
 
+https://furuhashilab.github.io/areamap/aichi.html
 
 三重カラム地図
 
