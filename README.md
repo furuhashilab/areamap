@@ -85,8 +85,8 @@ https://furuhashilab.github.io/areamap/yamanashi.html
 https://furuhashilab.github.io/areamap/nagano.html
 
 静岡カラム地図
-https://furuhashilab.github.io/areamap/sizuoka.html
 
+https://furuhashilab.github.io/areamap/sizuoka.html
 
 愛知カラム地図
 
