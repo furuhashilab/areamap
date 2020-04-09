@@ -137,7 +137,7 @@ https://furuhashilab.github.io/areamap/yamaguchi.html
 
 https://furuhashilab.github.io/areamap/fukuoka.html
 
-
+佐賀カラム地図
 
 https://furuhashilab.github.io/areamap/saga.html
 
