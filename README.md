@@ -145,7 +145,8 @@ https://furuhashilab.github.io/areamap/saga.html
 長崎カラム地図
 
 
-熊本カラム地図  
+熊本カラム地図
+
 https://furuhashilab.github.io/areamap/kumamoto.html
 
 
@@ -156,6 +157,7 @@ https://furuhashilab.github.io/areamap/kumamoto.html
 
 
 鹿児島カラム地図
+
 https://furuhashilab.github.io/areamap/kagoshima.html
 
 沖縄カラム地図
